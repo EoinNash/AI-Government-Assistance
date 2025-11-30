@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "country": "Jamaica",
+    "version": "1.1",
+    "last_updated": "2025-11-26",
+    "source_note": "This JSON defines form metadata and class labels used by the AI classifier."
+  },
+  "forms": {
+    "drivers_license_renewal": {
+      "id": "drivers_license_renewal",
+      "model_label": "drivers_license",
+      "name": "Driver's Licence Renewal",
+      "agency": "Tax Administration Jamaica (TAJ)",
+      "category": "transport",
+      "official_urls": [
+        "https://www.jamaicatax.gov.jm/"
+      ],
+      "submission_methods": [
+        "online_taj_portal",
+        "in_person_tax_office"
+      ],
+      "required_documents": [
+        "Valid or expired driver's licence",
+        "TRN",
+        "Passport-sized photograph (if required)",
+        "Receipt for applicable fees"
+      ],
+      "notes": "Use when renewing a Jamaican driver's licence that is active or recently expired."
+    },
+
+    "vehicle_registration_renewal": {
+      "id": "vehicle_registration_renewal",
+      "model_label": "vehicle_registration",
+      "name": "Motor Vehicle Registration Renewal",
+      "agency": "Tax Administration Jamaica (TAJ) / Island Traffic Authority (ITA)",
+      "category": "transport",
+      "official_urls": [
+        "https://www.jamaicatax.gov.jm/"
+      ],
+      "submission_methods": [
+        "online_taj_portal",
+        "in_person_tax_office"
+      ],
+      "required_documents": [
+        "Current motor vehicle registration certificate",
+        "Valid insurance certificate",
+        "Valid Motor Vehicle Fitness Certificate (if required)",
+        "TRN of registered owner",
+        "Receipt for applicable fees"
+      ],
+      "notes": "Use when the user uploads a motor vehicle registration certificate or sticker."
+    },
+
+    "vehicle_title_application": {
+      "id": "vehicle_title_application",
+      "model_label": "vehicle_title",
+      "name": "Application for Motor Vehicle Title",
+      "agency": "Tax Administration Jamaica (TAJ)",
+      "category": "transport",
+      "official_urls": [
+        "https://www.jamaicatax.gov.jm/"
+      ],
+      "submission_methods": [
+        "in_person_tax_office"
+      ],
+      "required_documents": [
+        "Completed application form",
+        "Proof of ownership",
+        "Valid ID",
+        "TRN",
+        "Receipt for applicable fees"
+      ],
+      "notes": "Use when the user is applying for or replacing a motor vehicle title."
+    },
+
+    "trn_application": {
+      "id": "trn_application",
+      "model_label": "trn",
+      "name": "Tax Registration Number Application",
+      "agency": "Tax Administration Jamaica",
+      "category": "identity",
+      "official_urls": [
+        "https://www.jamaicatax.gov.jm/"
+      ],
+      "submission_methods": [
+        "in_person_tax_office",
+        "online_taj_portal"
+      ],
+      "required_documents": [
+        "Completed TRN application form",
+        "Proof of identity (e.g., birth certificate, passport)",
+        "Proof of address (where required)"
+      ],
+      "notes": "Use when the model detects a TRN card or TRN application-related document."
+    },
+
+    "national_id_application": {
+      "id": "national_id_application",
+      "model_label": "state_id",
+      "name": "National Identification Card Application",
+      "agency": "Electoral Office of Jamaica",
+      "category": "identity",
+      "official_urls": [
+        "https://www.nids.gov.jm/"
+      ],
+      "submission_methods": [
+        "in_person_enrolment_centre"
+      ],
+      "required_documents": [
+        "Completed application form",
+        "Supporting identity documents (e.g., birth certificate, TRN)",
+        "Proof of address",
+        "Passport-sized photograph (if required)"
+      ],
+      "notes": "Use when the model detects a state or national ID card-related document."
+    }
+  }
+}
+
